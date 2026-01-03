@@ -6,7 +6,7 @@ import warnings
 warnings.filterwarnings("ignore")
 
 # ================= LOAD ARTIFACTS =================
-model = joblib.load("Logistic_heart.pkl")
+model = joblib.load("logistic_heart.pkl")
 scaler = joblib.load("scaler.pkl")
 expected_columns = joblib.load("columns.pkl")
 
@@ -87,5 +87,6 @@ if st.button("Predict"):
 
 st.markdown("---")
 st.markdown("**Developed by Jevin Kanani**  \nData Science | Machine Learning")
+
 
 
