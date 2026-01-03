@@ -1,14 +1,18 @@
 import streamlit as st
 import pandas as pd
 import joblib
+import os
 import warnings
 
 warnings.filterwarnings("ignore")
 
 # ================= LOAD ARTIFACTS =================
-model = joblib.load("logistic_heart.pkl")
-scaler = joblib.load("scaler.pkl")
-expected_columns = joblib.load("columns.pkl")
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+
+model = joblib.load(os.path.join(BASE_DIR, "logistic_heart.pkl"))
+scaler = joblib.load(os.path.join(BASE_DIR, "scaler.pkl"))
+expected_columns = joblib.load(os.path.join(BASE_DIR, "columns.pkl"))
+
 
 # ================= UI =================
 st.title("❤️ Heart Disease Prediction By Jevin")
@@ -87,6 +91,7 @@ if st.button("Predict"):
 
 st.markdown("---")
 st.markdown("**Developed by Jevin Kanani**  \nData Science | Machine Learning")
+
 
 
 
