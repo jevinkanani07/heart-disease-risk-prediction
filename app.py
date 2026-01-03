@@ -1,10 +1,4 @@
 import streamlit as st
-import pandas as pd
-import joblib
-import os
-import warnings
-
-warnings.filterwarnings("ignore")
 
 # Force Dark Theme using CSS
 st.markdown("""
@@ -44,6 +38,13 @@ st.markdown("""
     }
     </style>
 """, unsafe_allow_html=True)
+
+import pandas as pd
+import joblib
+import os
+import warnings
+
+warnings.filterwarnings("ignore")
 
 
 # ================= LOAD ARTIFACTS =================
@@ -131,6 +132,7 @@ if st.button("Predict"):
 
 st.markdown("---")
 st.markdown("**Developed by Jevin Kanani**  \nData Science | Machine Learning")
+
 
 
 
