@@ -1,0 +1,7 @@
+[theme]
+base="dark"
+primaryColor="#ff4b4b"            # Heart / alert color
+backgroundColor="#0b0f19"         # Darker premium bg
+secondaryBackgroundColor="#161a2b"
+textColor="#eaeaf0"
+font="sans serif"
