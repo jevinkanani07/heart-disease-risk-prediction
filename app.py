@@ -6,6 +6,46 @@ import warnings
 
 warnings.filterwarnings("ignore")
 
+# Force Dark Theme using CSS
+st.markdown("""
+    <style>
+    .stApp {
+        background-color: #0e1117;
+        color: #eaeaf0;
+    }
+
+    /* Sidebar */
+    section[data-testid="stSidebar"] {
+        background-color: #161a2b;
+    }
+
+    /* Text */
+    h1, h2, h3, h4, h5, h6, p, span, label {
+        color: #eaeaf0 !important;
+    }
+
+    /* Input boxes */
+    input, textarea, select {
+        background-color: #0e1117 !important;
+        color: #eaeaf0 !important;
+        border: 1px solid #444;
+    }
+
+    /* Sliders */
+    .stSlider > div {
+        color: #ff4b4b;
+    }
+
+    /* Buttons */
+    .stButton>button {
+        background-color: #ff4b4b;
+        color: white;
+        border-radius: 8px;
+    }
+    </style>
+""", unsafe_allow_html=True)
+
+
 # ================= LOAD ARTIFACTS =================
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
@@ -91,6 +131,7 @@ if st.button("Predict"):
 
 st.markdown("---")
 st.markdown("**Developed by Jevin Kanani**  \nData Science | Machine Learning")
+
 
 
 
