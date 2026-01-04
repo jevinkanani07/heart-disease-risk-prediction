@@ -5,8 +5,10 @@ using clinical features.
 
 Tech Stack:
 - Python
+- Machine Learning 
 - Streamlit
 - Scikit-learn
+
 
 🔗 Live App:
 👉 https://heart-disease-risk-prediction-jevin.streamlit.app
