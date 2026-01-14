@@ -5,7 +5,8 @@ using clinical features.
 
 Tech Stack:
 - Python
-- Machine Learning 
+- Pandas
+- Machine Learning
 - Streamlit
 - Scikit-learn
 
