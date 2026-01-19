@@ -16,7 +16,7 @@ expected_columns = joblib.load(os.path.join(BASE_DIR, "columns.pkl"))
 
 
 # ================= UI =================
-st.title("❤️ Heart Disease Prediction By Jevin")
+st.title("Heart Disease Prediction By Jevin")
 st.markdown("Provide the following details")
 
 age = st.slider("Age", 18, 100, 40)
@@ -67,7 +67,7 @@ if st.button("Predict"):
     probability = model.predict_proba(input_scaled)[0][1] * 100
 
     # ================= RESULT =================
-    st.subheader("📊 Prediction Result")
+    st.subheader("Prediction Result")
 
     if prediction == 1:
         st.error(
@@ -76,7 +76,7 @@ if st.button("Predict"):
 
             **Probability: {probability:.2f}%**
 
-            ⚠️ This indicates a higher likelihood of heart disease.
+            This indicates a higher likelihood of heart disease.
             """
         )
     else:
@@ -86,7 +86,7 @@ if st.button("Predict"):
 
             **Probability: {probability:.2f}%**
 
-            ✅ This indicates a lower likelihood of heart disease.
+            This indicates a lower likelihood of heart disease.
             """
         )
 
