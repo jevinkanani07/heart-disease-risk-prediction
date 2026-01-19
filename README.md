@@ -4,7 +4,7 @@ A Machine Learning based web application that predicts the risk of heart disease
 using clinical features.
 
 Tech Stack:
-- Pytho-
+- Python
 - Pandas
 - Machine Learning
 - Streamlit
