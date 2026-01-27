@@ -10,9 +10,8 @@ Tech Stack:
 - Streamlit
 - Scikit-learn
 
-
-🔗 Live App:
-👉 https://heart-disease-risk-prediction-jevin.streamlit.app
+Live App: https://heart-disease-risk-prediction-jevin.streamlit.app
 
 Developed by Jevin Kanani  
 Data Science | Machine Learning
+
