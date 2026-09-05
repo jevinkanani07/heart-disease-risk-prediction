@@ -662,7 +662,7 @@ if page == "Risk Prediction":
 
     with col1:
 
-        age = st.st.slider(
+        age = st.slider(
             "Age",
             min_value=1,
             max_value=120,
@@ -721,7 +721,7 @@ if page == "Risk Prediction":
             ["N", "Y"]
         )
 
-        oldpeak = st.st.slider(
+        oldpeak = st.slider(
             "Oldpeak",
             min_value=-3.0,
             max_value=10.0,
